@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html dir="ltr" class="firefox firefox65" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="database_files/print.css"><title>Print view - phpMyAdmin 4.6.6deb5</title><script data-cfasync="false" type="text/javascript" src="database_files/whitelist.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/get_scripts_003.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/get_scripts_002.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/get_scripts.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/get_scripts_004.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/messages.php"></script><script data-cfasync="false" type="text/javascript" src="database_files/get_image.php"></script><script data-cfasync="false" type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"?token=9f210d171ff0852028bcfdccfbaf2029",opendb_url:"db_structure.php",safari_browser:"0",collation_connection:"utf8mb4_unicode_ci",lang:"en",server:"1",table:"",db:"IT490DB",token:"9f210d171ff0852028bcfdccfbaf2029",text_dir:"ltr",show_databases_navigation_as_tree:"1",pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:"",LimitChars:"50",pftext:"P",confirm:"1",LoginCookieValidity:"1440",logged_in:"1",PMA_VERSION:"4.6.6deb5",auth_type:"cookie"});
+ConsoleEnterExecutes=false
+AJAX.scriptHandler.add("jquery/jquery-2.1.4.min.js",0).add("whitelist.php?lang=en&amp;db=IT490DB&amp;token=9f210d171ff0852028bcfdccfbaf2029",1).add("sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.11.4.min.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("tracekit/tracekit.js",1).add("error_report.js",1).add("messages.php?lang=en&amp;db=IT490DB&amp;token=9f210d171ff0852028bcfdccfbaf2029",0).add("get_image.js.php?theme=pmahomme",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/sql/sql.js",0).add("codemirror/addon/runmode/runmode.js",0).add("codemirror/addon/hint/show-hint.js",0).add("codemirror/addon/hint/sql-hint.js",0).add("codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
+$(function() {AJAX.fireOnload("whitelist.php?lang=en&amp;db=IT490DB&amp;token=9f210d171ff0852028bcfdccfbaf2029");AJAX.fireOnload("sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("tracekit/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("console.js");});
+// ]]></script><noscript><style>html{display:block}</style></noscript></head><body><div id="pma_header"></div><noscript><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> Javascript must be enabled past this point!</div></noscript><div id="page_content"><div>
+<h2>Likes</h2>
+<table class="print" width="100%"><tbody><tr><th width="50">Column</th><th width="80">Type</th><th width="40">Null</th><th width="70">Default</th>    <th>Links to</th>
+    <th>Comments</th>
+    <th>MIME</th>
+</tr><tr class="odd"><td class="nowrap">URL</td><td class="nowrap" dir="ltr" lang="en">text</td><td>No</td><td class="nowrap"></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Likes</td><td class="nowrap" dir="ltr" lang="en">json</td><td>No</td><td class="nowrap"></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr></tbody></table></div><div>
+<h2>Lists</h2>
+<table class="print" width="100%"><tbody><tr><th width="50">Column</th><th width="80">Type</th><th width="40">Null</th><th width="70">Default</th>    <th>Links to</th>
+    <th>Comments</th>
+    <th>MIME</th>
+</tr><tr class="odd"><td class="nowrap">UserName <em>(Primary)</em></td><td class="nowrap" dir="ltr" lang="en">varchar(32)</td><td>No</td><td class="nowrap"></td>    <td>logins -&gt; UserName</td>
+    <td></td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">List</td><td class="nowrap" dir="ltr" lang="en">json</td><td>Yes</td><td class="nowrap"><i>NULL</i></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr></tbody></table><h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="database_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>UserName</td><td>0</td><td>A</td><td>No</td><td rowspan="1"></td></tr></tbody></table></div><div>
+<h2>Preferences</h2>
+<table class="print" width="100%"><tbody><tr><th width="50">Column</th><th width="80">Type</th><th width="40">Null</th><th width="70">Default</th>    <th>Links to</th>
+    <th>Comments</th>
+    <th>MIME</th>
+</tr><tr class="odd"><td class="nowrap">UserName <em>(Primary)</em></td><td class="nowrap" dir="ltr" lang="en">varchar(32)</td><td>No</td><td class="nowrap"></td>    <td>logins -&gt; UserName</td>
+    <td>User Name linked by logins</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Balanced</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Protein/Fat/Carb values in 15/35/50 ratio</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">High-Fiber</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>More than 5g fiber per serving</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">High-Protein</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>More than 50% of total calories from proteins</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Low-Carb</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Less than 20% of total calories from carbs</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Low-Fat</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Less than 15% of total calories from fat</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Low-Sodium</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Less than 140mg Na per serving</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Alcohol-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No alcohol used or contained</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Celery-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain celery or derivatives</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Crustacean-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain crustaceans (shrimp, lobster etc.) or derivatives</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Dairy</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No dairy; no lactose</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Eggs</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No eggs or products containing eggs</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Fish</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No fish or fish derivatives</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Gluten</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No ingredients containing gluten</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Kidney-friendly</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>per serving – phosphorus less than 250 mg AND potassium less than 500 mg AND sodium: less than 500 mg</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Kosher</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>contains only ingredients allowed by the kosher diet. However it
+ does not guarantee kosher preparation of the ingredients themselves</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Low-potassium</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Less than 150mg per serving</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Lupine-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain lupine or derivatives</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Mustard-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain mustard or derivatives</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">No-oil-added</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No oil added except to what is contained in the basic ingredients</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">No-sugar</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>	No simple sugars – glucose, dextrose, galactose, fructose, sucrose, lactose, maltose</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Paleo</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Excludes what are perceived to be agricultural products; grains,
+ legumes, dairy products, potatoes, refined salt, refined sugar, and 
+processed oils</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Peanuts</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No peanuts or products containing peanuts</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Pescatarian</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Does not contain meat or meat based products, can contain dairy and fish</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Pork-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain pork or derivatives</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Red-meat-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain beef, lamb, pork, duck, goose, game, horse, and other types of red meat or products containing red meat.</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Sesame-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>does not contain sesame seed or derivatives</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Shellfish</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No shellfish or shellfish derivatives</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Soy</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No soy or products containing soy</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Sugar-conscious</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>Less than 4g of sugar per serving</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Tree Nuts</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No tree nuts or products containing tree nuts</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Vegan</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No meat, poultry, fish, dairy, eggs or honey</td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Vegetarian</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No meat, poultry, or fish</td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">Wheat-free</td><td class="nowrap" dir="ltr" lang="en">tinyint(1)</td><td>No</td><td class="nowrap">0</td>    <td></td>
+    <td>No wheat, can have gluten though</td>
+    <td></td>
+</tr></tbody></table><h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="database_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>UserName</td><td>0</td><td>A</td><td>No</td><td rowspan="1"></td></tr></tbody></table></div><div>
+<h2>logins</h2>
+<table class="print" width="100%"><tbody><tr><th width="50">Column</th><th width="80">Type</th><th width="40">Null</th><th width="70">Default</th>    <th>Links to</th>
+    <th>Comments</th>
+    <th>MIME</th>
+</tr><tr class="odd"><td class="nowrap">firstName</td><td class="nowrap" dir="ltr" lang="en">varchar(32)</td><td>Yes</td><td class="nowrap"><i>NULL</i></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">LastName</td><td class="nowrap" dir="ltr" lang="en">varchar(32)</td><td>Yes</td><td class="nowrap"><i>NULL</i></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">EMAIL</td><td class="nowrap" dir="ltr" lang="en">varchar(255)</td><td>Yes</td><td class="nowrap"><i>NULL</i></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr><tr class="even"><td class="nowrap">UserName <em>(Primary)</em></td><td class="nowrap" dir="ltr" lang="en">varchar(32)</td><td>No</td><td class="nowrap"></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr><tr class="odd"><td class="nowrap">Password</td><td class="nowrap" dir="ltr" lang="en">varchar(64)</td><td>Yes</td><td class="nowrap"><i>NULL</i></td>    <td></td>
+    <td></td>
+    <td></td>
+</tr></tbody></table><h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="database_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th><th>Comment</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>UserName</td><td>3</td><td>A</td><td>No</td><td rowspan="1"></td></tr></tbody></table></div><p class="print_ignore"><input type="button" class="button" id="print" value="Print"></p></div><div id="selflink" class="print_ignore"><a href="http://localhost/phpmyadmin/db_datadict.php?db=IT490DB&amp;table=logins&amp;server=1&amp;target=&amp;token=9f210d171ff0852028bcfdccfbaf2029" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer"><img src="database_files/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new"></a></div><div class="clearfloat" id="pma_errors"></div><script data-cfasync="false" type="text/javascript">// <![CDATA[
+if (! (history && history.pushState)) PMA_MicroHistory.primer = { url: "db_datadict.php?db=IT490DB&table=logins&server=1&target=&token=9f210d171ff0852028bcfdccfbaf2029", scripts: [{"name":"jquery\/jquery-2.1.4.min.js","fire":0},{"name":"sprintf.js","fire":1},{"name":"ajax.js","fire":0},{"name":"keyhandler.js","fire":1},{"name":"jquery\/jquery-ui-1.11.4.min.js","fire":0},{"name":"jquery\/jquery.cookie.js","fire":0},{"name":"jquery\/jquery.mousewheel.js","fire":0},{"name":"jquery\/jquery.event.drag-2.2.js","fire":0},{"name":"jquery\/jquery-ui-timepicker-addon.js","fire":0},{"name":"jquery\/jquery.ba-hashchange-1.3.js","fire":0},{"name":"jquery\/jquery.debounce-1.0.5.js","fire":0},{"name":"menu-resizer.js","fire":1},{"name":"cross_framing_protection.js","fire":0},{"name":"rte.js","fire":1},{"name":"tracekit\/tracekit.js","fire":1},{"name":"error_report.js","fire":1},{"name":"config.js","fire":1},{"name":"doclinks.js","fire":1},{"name":"functions.js","fire":1},{"name":"navigation.js","fire":1},{"name":"indexes.js","fire":1},{"name":"common.js","fire":1},{"name":"page_settings.js","fire":1},{"name":"codemirror\/lib\/codemirror.js","fire":0},{"name":"codemirror\/mode\/sql\/sql.js","fire":0},{"name":"codemirror\/addon\/runmode\/runmode.js","fire":0},{"name":"codemirror\/addon\/hint\/show-hint.js","fire":0},{"name":"codemirror\/addon\/hint\/sql-hint.js","fire":0},{"name":"codemirror\/addon\/lint\/lint.js","fire":0},{"name":"codemirror\/addon\/lint\/sql-lint.js","fire":0},{"name":"console.js","fire":1}], menuHash: "d1946031"};
+var debugSQLInfo = 'null';
+AJAX.scriptHandler;
+$(function() {});
+// ]]></script><div id="pma_footer"></div></body></html>
