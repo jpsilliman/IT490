@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>
+Dietary Profile
+</title>
+<style>
+table{background-color:#e5e5e5;}
+td{padding:2px;}
+.left{padding-left:5px;}
+.right{padding-right:5px;}
+.bottom{padding-bottom:15px;}
+.bottomleft{padding-left:5px;padding-bottom:15px;}
+.bottomright{padding-right:5px;padding-bottom:15px;}
+</style>
+</head>
+<body>
+<h2>Dietary Profile</h2>
+<br>
+<p>Select the checkbox next to your desired dietary restrictions.</p>
+<form action='buildprofile.php' method='post'>
+<table>
+<tr>
+<td class='left'><input type='checkbox' name='balanced' ></td>
+<td>Balanced</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='high-fiber' ></td>
+<td>High Fiber</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='high-protein' value=1></td>
+<td class='right'>High Protein</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='low-carb' value=1></td>
+<td>Low Carb</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='low-fat' value=1></td>
+<td>Low Fat</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='low-sodium' value=1></td>
+<td class='right'>Low Sodium</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='alcohol-free' value=1></td>
+<td>Alcohol Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='celery-free' value=1></td>
+<td>Celery Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='crustacean-free' value=1></td>
+<td class='right'>Crustacean Free</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='dairy' value=1></td>
+<td>Dairy Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='eggs' value=1></td>
+<td>Egg Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='fish' value=1></td>
+<td class='right'>Fish Free</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='gluten' value=1></td>
+<td>Gluten Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='kidney-friendly' value=1></td>
+<td>Kidney Friendly</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='kosher' value=1></td>
+<td class='right'>Kosher</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='low-potassium' value=1></td>
+<td>Low Potassium</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='lupine-free' value=1></td>
+<td>Lupine Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='mustard-free' value=1></td>
+<td class='right'>Mustard Free</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='no-oil-added' value=1></td>
+<td>No Oil Added</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='no-sugar' value=1></td>
+<td>No Sugar</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='paleo' value=1></td>
+<td class='right'>Paleo</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='peanuts' value=1></td>
+<td>Peanut Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='pescatarian' value=1></td>
+<td>Pescataraian</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='pork-free' value=1></td>
+<td class='right'>Pork Free<td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='red-meat-free' value=1></td>
+<td>Red Meat Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='sesame-free' value=1></td>
+<td>Sesame Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='shellfish' value=1></td>
+<td class='right'>Shellfish Free</td>
+</tr>
+<tr>
+<td class='left'><input type='checkbox' name='soy' value=1></td>
+<td>Soy Free</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='sugar-conscious' value=1></td>
+<td>Sugar Conscious</td>
+<td>&nbsp;&nbsp;</td>
+<td><input type='checkbox' name='tree_nuts' value=1></td>
+<td>Tree Nut Free</td>
+<td class='right'>&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td class='bottomleft'><input type='checkbox' name='vegan' value=1></td>
+<td class='bottom'>Vegan</td>
+<td class='bottom'>&nbsp;&nbsp;</td>
+<td class='bottom'><input type='checkbox' name='vegetarian' value=1></td>
+<td class='bottom'>Vegetarian</td>
+<td class='bottom'>&nbsp;&nbsp;</td>
+<td class='bottom'><input type='checkbox' name='wheat-free' value=1></td>
+<td class='bottomright'>Wheat Free</td>
+</tr>
+</table>
+<br><br>
+<input type='submit' value='Save Profile'>
+</form>
+</html>
