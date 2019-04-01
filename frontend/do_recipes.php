@@ -14,20 +14,29 @@ if($choice=='get'){
   $send=array();
   $send['type']='getPreference';
   $send['user']=$_SESSION['user'];
-  echo 'array populated';
   $response=$dbclient->send_request($send);
   $preferences=$response['message'];
-  $dbclient->close();
-  var_dump($preferences);
-  echo "<br><br><a href='recipes.php'>Return to recipes</a>";
-
-/*
+  
   $apiclient=new rabbitMQClient('apiRabbitMQ.ini','testServer');
   $request=array();
   $request['type']='getRecipe';
   $request['query']=$_POST['food'];
   $request['preferences']=$preferences;
-  $recipe=$apiclient->send_request($request);
-*/
+  $response=$apiclient->send_request($request);
+  $recipes=$response['message'];
+  if(gettype($recipes)=='array'){
+    echo "<b>See recipes below</b><br>";
+    echo "<table>";
+    foreach($recipes as $title=>$url){
+       echo "<tr><td><a href=$url target='_blank'>$title</a></td></tr>";
+    }
+    echo "</table>";
+    echo "<br><br><a href='recipes.php'>Return to recipes</a>";
+  }
+  elseif(gettype($recipes)=='string' and $recipes=='No matches'){
+    redirect('No results found for your search that match your diet profile. Please try again. Your search was: '.$request['query'].'.','recipes.php',3);
+  }
 }
+$dbclient->close();
+$apiclient->close();
 ?>
