@@ -1,0 +1,13 @@
+#!/bin/bash
+rm bundle??.tar
+
+tar -xvf bundle.tar -C ./files
+
+find ./archive_tar/ -type f ! -name '*bundle*.tar' -delete
+
+NUMBER="$(ls archive_tar/ | grep .tar | wc -l)"
+(( NUMBER++ ))
+printf -v NUMBER "%02d" $NUMBER
+
+cp bundle.tar "./archive_tar/bundle"$NUMBER".tar"
+mv bundle.tar "bundle"$NUMBER".tar"
