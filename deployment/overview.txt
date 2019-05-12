@@ -56,3 +56,5 @@ purge.bsh:
   line 4: cd into the proper directory
   line 16: specify directory for files to be installed to
   
+dothis.bsh
+  line 2: cd into the proper directory
