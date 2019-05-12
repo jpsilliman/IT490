@@ -1,0 +1,58 @@
+Files
+--------------------------
+On sending VM:
+--deploy.bsh
+
+On receiving VM:
+--dothis.bsh
+--purge.bsh
+--receive.bsh
+
+On both VMs:
+--dump_archive.bsh
+
+
+Directory Structure
+------------------------------------------------------------------------
+On sending VM:
+/bundle:
+/archive_tar, where all tars go for backup purposes
+/files, the directory containing the files to be sent
+deploy.bsh, the file to run to push out the update
+dump_archive.bsh, a file which will dump all the backup tar files
+
+On receiving VM:
+/home/deploy:
+dothis.bsh, the file that is called on ssh'ing from the sending VM to the receiving VM
+
+/deploy/bundle/in: the directory for incoming bundles
+/archive_tar, where all tars go for backup purposes
+  (This is important for rollback!)
+/files, the directory containing the files when they are unzipped
+bundle##.tar, the active bundle
+  DO NOT DELETE THIS FROM THE DIRECTORY OR receive.bsh AND purge.bsh WILL NOT WORK PROPERLY!!
+receive.bsh, the file that runs to install the new incoming package
+purge.bsh, the file that removes the current package and rolls back to the previous working version
+dump_archive.bsh, a file which will dump all the backup tar files
+
+/deploy/bundle/out: the directory for outgoing bundles
+(will mirror the sending VM /bundle directory)
+
+
+File Specifics
+---------------------------------------------
+deploy.bsh:
+  line 2: directory where files are contained
+  line 5: will need to mv bundle.tar to the correct directory
+  line 6: cd into the proper directory
+  line 7: specify the user, ip address, and directory to copy to
+  line 16: specify user, ip address, and one command to run when ssh connects
+
+receive.bsh:
+  line 4: specify directory for files to be installed to
+
+purge.bsh:
+  line 2: directory where the files are installed to
+  line 4: cd into the proper directory
+  line 16: specify directory for files to be installed to
+  
