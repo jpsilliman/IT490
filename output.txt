@@ -1,0 +1,498 @@
+Google_Service_YouTube_SearchListResponse Object
+(
+    [collection_key:protected] => items
+    [etag] => "XpPGQXPnxQJhLgs6enD_n8JR4Qk/8oFb6vV736br2XaaWwNKMluaYm8"
+    [eventId] => 
+    [itemsType:protected] => Google_Service_YouTube_SearchResult
+    [itemsDataType:protected] => array
+    [kind] => youtube#searchListResponse
+    [nextPageToken] => CAMQAA
+    [pageInfoType:protected] => Google_Service_YouTube_PageInfo
+    [pageInfoDataType:protected] => 
+    [prevPageToken] => 
+    [regionCode] => US
+    [tokenPaginationType:protected] => Google_Service_YouTube_TokenPagination
+    [tokenPaginationDataType:protected] => 
+    [visitorId] => 
+    [internal_gapi_mappings:protected] => Array
+        (
+        )
+
+    [modelData:protected] => Array
+        (
+        )
+
+    [processed:protected] => Array
+        (
+        )
+
+    [pageInfo] => Google_Service_YouTube_PageInfo Object
+        (
+            [resultsPerPage] => 3
+            [totalResults] => 1000000
+            [internal_gapi_mappings:protected] => Array
+                (
+                )
+
+            [modelData:protected] => Array
+                (
+                )
+
+            [processed:protected] => Array
+                (
+                )
+
+        )
+
+    [items] => Array
+        (
+            [0] => Google_Service_YouTube_SearchResult Object
+                (
+                    [etag] => "XpPGQXPnxQJhLgs6enD_n8JR4Qk/JUwog59ER_aUhIKtJsRJRyOARdY"
+                    [idType:protected] => Google_Service_YouTube_ResourceId
+                    [idDataType:protected] => 
+                    [kind] => youtube#searchResult
+                    [snippetType:protected] => Google_Service_YouTube_SearchResultSnippet
+                    [snippetDataType:protected] => 
+                    [internal_gapi_mappings:protected] => Array
+                        (
+                        )
+
+                    [modelData:protected] => Array
+                        (
+                        )
+
+                    [processed:protected] => Array
+                        (
+                        )
+
+                    [id] => Google_Service_YouTube_ResourceId Object
+                        (
+                            [channelId] => 
+                            [kind] => youtube#video
+                            [playlistId] => 
+                            [videoId] => 1UFry_adZaw
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [snippet] => Google_Service_YouTube_SearchResultSnippet Object
+                        (
+                            [channelId] => UCKo-NbWOxnxBnU41b-AoKeA
+                            [channelTitle] => SURFER
+                            [description] => April saw the full spectrum of entertaining surf edits, which made the grading and ranking of the best ones more than a tad complicated. Luke Hynd took a trip to ...
+                            [liveBroadcastContent] => none
+                            [publishedAt] => 2019-05-09T23:59:22.000Z
+                            [thumbnailsType:protected] => Google_Service_YouTube_ThumbnailDetails
+                            [thumbnailsDataType:protected] => 
+                            [title] => The Best Surf Clips From the Month of April 2019
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                            [thumbnails] => Google_Service_YouTube_ThumbnailDetails Object
+                                (
+                                    [defaultType:protected] => Google_Service_YouTube_Thumbnail
+                                    [defaultDataType:protected] => 
+                                    [highType:protected] => Google_Service_YouTube_Thumbnail
+                                    [highDataType:protected] => 
+                                    [maxresType:protected] => Google_Service_YouTube_Thumbnail
+                                    [maxresDataType:protected] => 
+                                    [mediumType:protected] => Google_Service_YouTube_Thumbnail
+                                    [mediumDataType:protected] => 
+                                    [standardType:protected] => Google_Service_YouTube_Thumbnail
+                                    [standardDataType:protected] => 
+                                    [internal_gapi_mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [modelData:protected] => Array
+                                        (
+                                        )
+
+                                    [processed:protected] => Array
+                                        (
+                                        )
+
+                                    [default] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 90
+                                            [url] => https://i.ytimg.com/vi/1UFry_adZaw/default.jpg
+                                            [width] => 120
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [medium] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 180
+                                            [url] => https://i.ytimg.com/vi/1UFry_adZaw/mqdefault.jpg
+                                            [width] => 320
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [high] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 360
+                                            [url] => https://i.ytimg.com/vi/1UFry_adZaw/hqdefault.jpg
+                                            [width] => 480
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Google_Service_YouTube_SearchResult Object
+                (
+                    [etag] => "XpPGQXPnxQJhLgs6enD_n8JR4Qk/WznjU0SpaKoMkx-E7Jf-iI4VIgs"
+                    [idType:protected] => Google_Service_YouTube_ResourceId
+                    [idDataType:protected] => 
+                    [kind] => youtube#searchResult
+                    [snippetType:protected] => Google_Service_YouTube_SearchResultSnippet
+                    [snippetDataType:protected] => 
+                    [internal_gapi_mappings:protected] => Array
+                        (
+                        )
+
+                    [modelData:protected] => Array
+                        (
+                        )
+
+                    [processed:protected] => Array
+                        (
+                        )
+
+                    [id] => Google_Service_YouTube_ResourceId Object
+                        (
+                            [channelId] => 
+                            [kind] => youtube#video
+                            [playlistId] => 
+                            [videoId] => xU3iCjnlqx8
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [snippet] => Google_Service_YouTube_SearchResultSnippet Object
+                        (
+                            [channelId] => UCKo-NbWOxnxBnU41b-AoKeA
+                            [channelTitle] => SURFER
+                            [description] => Drawing from SURFER's “Clips of the Month” series, here's a (very arguable) list of the “Clips of the Year.” No matter how you slice it, 2018 was an incredible trip ...
+                            [liveBroadcastContent] => none
+                            [publishedAt] => 2019-01-16T00:05:33.000Z
+                            [thumbnailsType:protected] => Google_Service_YouTube_ThumbnailDetails
+                            [thumbnailsDataType:protected] => 
+                            [title] => The Best Surf Clips of 2018 | SURFER Magazine
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                            [thumbnails] => Google_Service_YouTube_ThumbnailDetails Object
+                                (
+                                    [defaultType:protected] => Google_Service_YouTube_Thumbnail
+                                    [defaultDataType:protected] => 
+                                    [highType:protected] => Google_Service_YouTube_Thumbnail
+                                    [highDataType:protected] => 
+                                    [maxresType:protected] => Google_Service_YouTube_Thumbnail
+                                    [maxresDataType:protected] => 
+                                    [mediumType:protected] => Google_Service_YouTube_Thumbnail
+                                    [mediumDataType:protected] => 
+                                    [standardType:protected] => Google_Service_YouTube_Thumbnail
+                                    [standardDataType:protected] => 
+                                    [internal_gapi_mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [modelData:protected] => Array
+                                        (
+                                        )
+
+                                    [processed:protected] => Array
+                                        (
+                                        )
+
+                                    [default] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 90
+                                            [url] => https://i.ytimg.com/vi/xU3iCjnlqx8/default.jpg
+                                            [width] => 120
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [medium] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 180
+                                            [url] => https://i.ytimg.com/vi/xU3iCjnlqx8/mqdefault.jpg
+                                            [width] => 320
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [high] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 360
+                                            [url] => https://i.ytimg.com/vi/xU3iCjnlqx8/hqdefault.jpg
+                                            [width] => 480
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Google_Service_YouTube_SearchResult Object
+                (
+                    [etag] => "XpPGQXPnxQJhLgs6enD_n8JR4Qk/f4B92xUeptcNLBwHd4cnYEjNyZE"
+                    [idType:protected] => Google_Service_YouTube_ResourceId
+                    [idDataType:protected] => 
+                    [kind] => youtube#searchResult
+                    [snippetType:protected] => Google_Service_YouTube_SearchResultSnippet
+                    [snippetDataType:protected] => 
+                    [internal_gapi_mappings:protected] => Array
+                        (
+                        )
+
+                    [modelData:protected] => Array
+                        (
+                        )
+
+                    [processed:protected] => Array
+                        (
+                        )
+
+                    [id] => Google_Service_YouTube_ResourceId Object
+                        (
+                            [channelId] => 
+                            [kind] => youtube#video
+                            [playlistId] => 
+                            [videoId] => eSwisMEtkBg
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [snippet] => Google_Service_YouTube_SearchResultSnippet Object
+                        (
+                            [channelId] => UCfn_qdZ1XMLRKIfMhexjooA
+                            [channelTitle] => Atua Mo'e
+                            [description] => The Gorpo I Use: https://amzn.to/2COZ1hQ The Mouth Mount I Use: https://amzn.to/2ClyqYM My Free Vlog Like A Pro Course: http://startavlog.com Favorite ...
+                            [liveBroadcastContent] => none
+                            [publishedAt] => 2018-09-02T01:56:19.000Z
+                            [thumbnailsType:protected] => Google_Service_YouTube_ThumbnailDetails
+                            [thumbnailsDataType:protected] => 
+                            [title] => What Surfing Is Actually Like
+                            [internal_gapi_mappings:protected] => Array
+                                (
+                                )
+
+                            [modelData:protected] => Array
+                                (
+                                )
+
+                            [processed:protected] => Array
+                                (
+                                )
+
+                            [thumbnails] => Google_Service_YouTube_ThumbnailDetails Object
+                                (
+                                    [defaultType:protected] => Google_Service_YouTube_Thumbnail
+                                    [defaultDataType:protected] => 
+                                    [highType:protected] => Google_Service_YouTube_Thumbnail
+                                    [highDataType:protected] => 
+                                    [maxresType:protected] => Google_Service_YouTube_Thumbnail
+                                    [maxresDataType:protected] => 
+                                    [mediumType:protected] => Google_Service_YouTube_Thumbnail
+                                    [mediumDataType:protected] => 
+                                    [standardType:protected] => Google_Service_YouTube_Thumbnail
+                                    [standardDataType:protected] => 
+                                    [internal_gapi_mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [modelData:protected] => Array
+                                        (
+                                        )
+
+                                    [processed:protected] => Array
+                                        (
+                                        )
+
+                                    [default] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 90
+                                            [url] => https://i.ytimg.com/vi/eSwisMEtkBg/default.jpg
+                                            [width] => 120
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [medium] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 180
+                                            [url] => https://i.ytimg.com/vi/eSwisMEtkBg/mqdefault.jpg
+                                            [width] => 320
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [high] => Google_Service_YouTube_Thumbnail Object
+                                        (
+                                            [height] => 360
+                                            [url] => https://i.ytimg.com/vi/eSwisMEtkBg/hqdefault.jpg
+                                            [width] => 480
+                                            [internal_gapi_mappings:protected] => Array
+                                                (
+                                                )
+
+                                            [modelData:protected] => Array
+                                                (
+                                                )
+
+                                            [processed:protected] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
