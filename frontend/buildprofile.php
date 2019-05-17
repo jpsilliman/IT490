@@ -4,7 +4,7 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 include('functions.php');
 
-session_set_cookie_params(0,'/seq/','192.168.3.41');
+session_set_cookie_params(0,'/bud/','192.168.3.22');
 session_start();
 
 gatekeeper();
@@ -14,12 +14,13 @@ $client=new rabbitMQClient('testRabbitMQ.ini','testServer');
 $profile=array();
 $profile['type']='setPreferences';
 $profile['user']=$_SESSION['user'];
-$profile['Balanced']=(isset($_POST['balanced'])?1:0);
-$profile['High-Fiber']=(isset($_POST['high-fiber'])?1:0);
-$profile['High-Protein']=(isset($_POST['high-protein'])?1:0);
-$profile['Low-Carb']=(isset($_POST['low-carb'])?1:0);
-$profile['Low-Fat']=(isset($_POST['low-fat'])?1:0);
-$profile['Low-Sodium']=(isset($_POST['low-sodium'])?1:0);
+$diet=$_POST['diet'];
+$profile['Balanced']=(($diet=='balanced')?1:0);
+$profile['High-Fiber']=(($diet=='high-fiber')?1:0);
+$profile['High-Protein']=(($diet=='high-protein')?1:0);
+$profile['Low-Carb']=(($diet=='low-carb')?1:0);
+$profile['Low-Fat']=(($diet=='low-fat')?1:0);
+$profile['Low-Sodium']=(($diet=='low-sodium')?1:0);
 $profile['Alcohol-free']=(isset($_POST['alcohol-free'])?1:0);
 $profile['Celery-free']=(isset($_POST['celery-free'])?1:0);
 $profile['Crustacean-free']=(isset($_POST['crustacean-free'])?1:0);

@@ -4,7 +4,7 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 include('functions.php');
 
-session_set_cookie_params(0, '/seq/','192.168.3.41');
+session_set_cookie_params(0, '/bud/','192.168.3.22');
 session_start();
 
 $client=new rabbitMQClient('testRabbitMQ.ini','testServer');

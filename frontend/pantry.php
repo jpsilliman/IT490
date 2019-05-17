@@ -1,61 +1,67 @@
 <?php
+require_once('path.inc');
+require_once('get_host_info.inc');
+require_once('rabbitMQLib.inc');
 include('functions.php');
-session_set_cookie_params(0,'/seq/','192.168.3.41');
+
+session_set_cookie_params(0,'/bud/','192.168.3.22');
 session_start();
 gatekeeper();
 ?>
-<head>
-<title>
-Pantry
-</title>
 <style>
-#fooditems{display:none;
- background-color:#e5e5e5;
+#fooditems{
+ background-color:#87cefa;
  padding:4px;
  width:24em;
- height:7em;
- border-radius: 10px;
+ height:12em;
+ border-radius:10px;
 }
-td:{padding:3px;}
+#stock{
+ display:inline-block;
+ background-color:#e5e5e5;
+}
+td.pantry{padding-left:5px;padding-right:5px;}
+td.input{padding:3px;}
 </style>
-<script> function appear(){
-  ptr1 = document.getElementById('choice')
-  ptr2 = document.getElementById('fooditems')
-  if(ptr1.value=="view")
-    ptr2.style.display = 'none'
-  else if(ptr1.value=="add")
-    ptr2.style.display = 'block'
+
+<?php
+$client=new rabbitMQClient('testRabbitMQ.ini','testServer');
+
+$pantry['type']='viewPantry';
+$pantry['user']=$_SESSION['user'];
+$response=$client->send_request($pantry);
+$contents=$response['message'];
+echo "<b>See your pantry contents below</b><br><br>";
+echo "<div id='stock'><table>";
+echo "<tr>";
+echo "<td class='pantry'><b>Food</b></td>";
+echo "<td class='pantry'><b>Amount</b></td>";
+echo "</tr>";
+for($i=0; $i<count($contents); $i++){
+  echo "<tr>";
+  echo "<td class='pantry'>".$contents[$i][0]."</td>";
+  echo "<td class='pantry'>".$contents[$i][1]." ".$contents[$i][2]."</td>";
+  echo "</tr>";
 }
-</script>
-</head>
-<body>
-<h2>Pantry</h2>
-<br>
-<p>Select what you would like to do:</p>
-<form action='do_pantry.php' method='post'>
-<select name='choice' onchange='appear()' id='choice'>
-<option value='view'>View pantry</option>
-<option value='add'>Add item</option>
-</select>
-<br><br>
-<div id='fooditems'>
-<table>
-<tr>
-<td>Food Item:</td>
-<td><input type='text' name='food'></td>
-</tr>
-<tr>
-<td>Number:</td>
-<td><input type='number' name='number'></td>
-</tr>
-<tr>
-<td>Unit (ex: oz, lb):</td>
-<td><input type='text' name='unit'></td>
-</tr>
-</table>
-</div>
-<br><br>
-<input type='submit' value='Continue'>
-</form>
-<br>
-<a href='home.php'>Return to home page</a>
+echo "</table></div>";
+echo "<br><br><br>";
+
+echo "<div id='fooditems'><b>Add to pantry</b>";
+echo "<form method='post' action='update_pantry.php'>";
+echo "<table>";
+echo "<tr>";
+echo "<td class='input'>Food Item:</td>";
+echo "<td class='input'><input type='text' name='food'></td>";
+echo "</tr><tr>";
+echo "<td class='input'>Number:</td>";
+echo "<td class='input'><input type='number' name='number'></td>";
+echo "</tr><tr>";
+echo "<td class='input'>Unit (ex: oz, lbs):</td>";
+echo "<td class='input'><input type='text' name='unit'></td>";
+echo "</tr></table><br>";
+echo "<input type='submit' value='Add to pantry'>";
+echo "</form></div>";
+
+echo "<br><br><a href='home.php'>Return to home page</a>";
+$client->close();
+?>
