@@ -1,0 +1,16 @@
+#!/bin/bash
+cd files/
+xargs rm < bundle.txt
+cd ../
+
+FILE="$(ls bundle??.tar)"
+rm "./archive_tar/"$FILE
+mv $FILE "x-"$FILE
+
+XFILE="$(ls x-bundle??.tar)"
+mv $XFILE archive_tar/
+
+GOODFILE="$(ls -v archive_tar/bundle*.tar | tail -n1)"
+cp $GOODFILE .
+
+tar -xf $(basename $GOODFILE) -C ./files

@@ -1,0 +1,16 @@
+#!/bin/bash
+cd files/
+ls > bundle.txt
+tar -cvf bundle.tar -T bundle.txt
+mv bundle.tar ../
+cd ../
+scp bundle.tar deploy@192.168.3.23:/home/deploy/bundle/in
+
+find ./archive_tar/ -type f ! -name 'bundle*.tar' -delete
+NUMBER="$(ls archive_tar/ | grep .tar | wc -l)"
+(( NUMBER++ ))
+printf -v NUMBER "%02d" $NUMBER
+
+mv bundle.tar "./archive_tar/bundle"$NUMBER".tar"
+
+ssh deploy@192.168.3.23 ./dothis.bsh
